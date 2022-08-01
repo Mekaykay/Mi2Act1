@@ -1,0 +1,30 @@
+import java.util.Scanner; 
+class Employee 
+{ 
+int id; 
+String name; 
+String design; 
+float salary; 
+} 
+public class Main { 
+public static void main(String[] args) 
+{ 
+Scanner sc=new Scanner(System.in); 
+System.out.println("How many Entern? "); 
+int n=sc.nextInt(); 
+Enter emp[]=new Entern[n]; 
+for (int i=0; i<n; i++) { 
+emp[i]=new Entern(); 
+System.out.println("Enter"+(i+1)+"Entern data: "); 
+System.out.print("Enter entern id: "); 
+emp[i].id=sc.nextInt(); 
+System.out.print("Enter entern name: "); 
+emp[i].name=sc.next(); 
+System.out.println("Enter entern salary: "); 
+emp[i].salary=sc.nextFloat(); 
+} 
+System.out.println("\n\n************All Entern Details are ************\n"); 
+for (int i=0; i<n; i++) { 
+System.out.println("Entern id, Name, Designation and Salary: "+emp[0].id+""+emp[i].name+""+emp[i].desig+""+emp[i].salary); 
+} 
+}
